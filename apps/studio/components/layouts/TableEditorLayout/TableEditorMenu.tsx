@@ -15,9 +15,9 @@ import {
 
 import { useTableEditorTabsCleanUp } from '../Tabs/Tabs.utils'
 import { EntityListItem } from './EntityListItem'
+import { getFirstQueryParam } from './getFirstQueryParam'
 import {
   buildTableEditorSchemaListPath,
-  readSidebarQueryParam,
   shouldLeaveOpenTableForSchema,
 } from './TableEditorMenu.utils'
 import { TableMenuEmptyState } from './TableMenuEmptyState'
@@ -190,7 +190,7 @@ export const TableEditorMenu = () => {
                 })
 
                 if (shouldShowSchemaList && projectRef) {
-                  const sidebar = readSidebarQueryParam(router.query.sidebar)
+                  const sidebar = getFirstQueryParam(router.query.sidebar)
                   router.replace(
                     buildTableEditorSchemaListPath({
                       projectRef,
