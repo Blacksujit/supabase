@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Button, cn } from 'ui'
 
@@ -32,7 +33,6 @@ export function BuyWithAwsButton({
       asChild
       size={size}
       icon={<AwsSmileIcon className="text-[#16191F]" />}
-      iconRight={<ExternalLink className="text-[#16191F]" />}
       className={cn(
         // Callsite override: AWS Marketplace orange CTA (not a semantic Studio token).
         'border-transparent bg-[#FF9900] text-[#16191F] hover:bg-[#EC7211] hover:text-[#16191F]',
