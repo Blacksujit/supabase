@@ -1,4 +1,3 @@
-import { ExternalLink } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Button, cn } from 'ui'
 

@@ -10,10 +10,7 @@ import SectionContainer from '@/components/Layouts/SectionContainer'
 import SectionHeading from '@/components/Layouts/SectionHeading'
 import Panel from '@/components/Panel'
 import BackgroundPattern from '@/components/Partners/BackgroundPattern'
-import {
-  AWS_MARKETPLACE_DOCS_URL,
-  AWS_MARKETPLACE_LANDING_URL,
-} from '@/lib/aws-marketplace'
+import { AWS_MARKETPLACE_DOCS_URL, AWS_MARKETPLACE_LANDING_URL } from '@/lib/aws-marketplace'
 
 const ENTERPRISE_CONTACT_URL = 'https://forms.supabase.com/enterprise'
 
@@ -92,7 +89,7 @@ export default function AwsMarketplacePage() {
             </p>
             <div className="mt-8 flex w-full flex-col justify-center gap-2 sm:w-auto sm:flex-row">
               <BuyWithAwsButton size="medium" />
-              <Button asChild size="medium" iconRight={<ArrowRight />}>
+              <Button asChild size="medium">
                 <a href={ENTERPRISE_CONTACT_URL}>Request a private offer</a>
               </Button>
             </div>
