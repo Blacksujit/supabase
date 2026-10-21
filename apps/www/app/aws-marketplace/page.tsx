@@ -92,7 +92,7 @@ export default function AwsMarketplacePage() {
               <Button
                 asChild
                 size="medium"
-                iconRight={<ArrowRight className="size-3.5 opacity-50" strokeWidth={1.25} />}
+                iconRight={<ArrowRight className="!h-3.5 !w-3.5" strokeWidth={1.5} />}
               >
                 <a href={ENTERPRISE_CONTACT_URL}>Request a private offer</a>
               </Button>
@@ -166,7 +166,12 @@ export default function AwsMarketplacePage() {
                   Talk to the Supabase team about committed terms and purchasing Enterprise through
                   a private AWS Marketplace offer.
                 </p>
-                <Button asChild size="small" className="mt-8 self-start">
+                <Button
+                  asChild
+                  size="small"
+                  className="mt-8 self-start"
+                  iconRight={<ArrowRight className="!h-3.5 !w-3.5" strokeWidth={1.5} />}
+                >
                   <a href={ENTERPRISE_CONTACT_URL}>Request a private offer</a>
                 </Button>
               </Panel>
