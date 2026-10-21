@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react'
+import { ExternalLinkIcon } from 'lucide-react'
 import { Button } from 'ui'
 import { Admonition } from 'ui-patterns/Admonition'
 
@@ -23,7 +23,7 @@ export function AwsMarketplacePurchaseCallout() {
       title="Prefer purchasing through AWS Marketplace?"
       description="Apply Supabase spend toward an AWS commitment and manage billing through AWS."
       actions={
-        <Button asChild variant="default" iconRight={<ExternalLink />}>
+        <Button asChild variant="default" iconRight={<ExternalLinkIcon />}>
           <a href={AWS_MARKETPLACE_URL} target="_blank" rel="noreferrer">
             View options
           </a>

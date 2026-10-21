@@ -1,6 +1,6 @@
 import { PermissionAction, SupportCategories } from '@supabase/shared-types/out/constants'
 import { useFlag, useParams } from 'common'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLinkIcon } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from 'ui'
 import { Admonition } from 'ui-patterns/Admonition'
@@ -75,14 +75,14 @@ const Subscription = () => {
                 <Link href={COMPARE_PLANS_URL} target="_blank" rel="noreferrer">
                   <div className="flex items-center space-x-2 opacity-50 transition hover:opacity-100">
                     <p className="m-0 text-sm">Compare plans</p>
-                    <ExternalLink size={16} strokeWidth={1.5} />
+                    <ExternalLinkIcon size={16} strokeWidth={1.5} />
                   </div>
                 </Link>
                 {canPurchaseThroughAws && (
                   <Link href={AWS_MARKETPLACE_URL} target="_blank" rel="noreferrer">
                     <div className="flex items-center space-x-2 opacity-50 transition hover:opacity-100">
                       <p className="m-0 text-sm">AWS Marketplace</p>
-                      <ExternalLink size={16} strokeWidth={1.5} />
+                      <ExternalLinkIcon size={16} strokeWidth={1.5} />
                     </div>
                   </Link>
                 )}
