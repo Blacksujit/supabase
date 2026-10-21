@@ -33,8 +33,8 @@ export function BuyWithAwsButton({
       asChild
       size={size}
       icon={<AwsSmileIcon className="text-[#16191F]" />}
-      // Button icon shell uses [&_svg]:h/w by size; ! is required to shrink the trailing mark.
-      iconRight={<ExternalLink className="!h-3.5 !w-3.5 text-[#16191F]" strokeWidth={1.5} />}
+      // Sizing and fill to optically match sibling "Request a private offer" button
+      iconRight={<ExternalLink className="!h-4 !w-4 text-[#16191F]/60"  />}
       className={cn(
         // Callsite override: AWS orange, soft hover (not a semantic Studio token).
         'border-transparent bg-[#FF9F1A] text-[#16191F] hover:bg-[#F59610] hover:text-[#16191F]',

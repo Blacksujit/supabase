@@ -92,7 +92,8 @@ export default function AwsMarketplacePage() {
               <Button
                 asChild
                 size="medium"
-                iconRight={<ArrowRight className="!h-3.5 !w-3.5" strokeWidth={1.5} />}
+                // Optically match BuyWithAwsButton
+                iconRight={<ArrowRight className="!h-4 !w-4" strokeWidth={1.5} />}
               >
                 <a href={ENTERPRISE_CONTACT_URL}>Request a private offer</a>
               </Button>
