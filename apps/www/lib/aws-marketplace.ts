@@ -1,12 +1,10 @@
 /**
  * Buy with AWS procurement helpers.
  *
- * TODO(aws-marketplace): replace productId and sellerId with the real values from
- * Sana / AWS Marketplace Management Portal (Settings → Tags → Seller ARN for sellerId).
- * Tracking and the co-branded procurement page will not work until these are set.
+ * productId / sellerId from Thomas (AWS Marketplace Management Portal).
  */
-export const AWS_MARKETPLACE_PRODUCT_ID = 'TODO_PRODUCT_ID'
-export const AWS_MARKETPLACE_SELLER_ID = 'TODO_SELLER_ID'
+export const AWS_MARKETPLACE_PRODUCT_ID = 'prod-hqz7ogrwmjmbm'
+export const AWS_MARKETPLACE_SELLER_ID = 'seller-tvv3ohr7rtbr4'
 
 export const AWS_MARKETPLACE_PARTNER_SCRIPT_SRC =
   'https://bwa.marketplace.awsstatic.com/assets/partner.js'
