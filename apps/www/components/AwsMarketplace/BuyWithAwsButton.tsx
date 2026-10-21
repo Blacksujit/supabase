@@ -32,12 +32,12 @@ export function BuyWithAwsButton({
     <Button
       asChild
       size={size}
-      icon={<AwsSmileIcon className="text-[#16191F]" />}
+      icon={<AwsSmileIcon className="text-aws-ink" />}
       // Sizing and fill to optically match sibling "Request a private offer" button
-      iconRight={<ExternalLink className="!h-4 !w-4 text-[#16191F]/60"  />}
+      iconRight={<ExternalLink className="h-4! w-4! text-aws-ink/60" />}
       className={cn(
-        // Callsite override: AWS orange, soft hover (not a semantic Studio token).
-        'border-transparent bg-[#FF9F1A] text-[#16191F] hover:bg-[#F59610] hover:text-[#16191F]',
+        // Partner brand tokens from styles/globals.css (@theme --color-aws-*).
+        'border-transparent bg-aws-orange text-aws-ink hover:bg-aws-orange-hover hover:text-aws-ink',
         className
       )}
       data-awsmp-bwa-cta="BuyWithAws"
