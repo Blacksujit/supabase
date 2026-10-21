@@ -33,9 +33,10 @@ export function BuyWithAwsButton({
       asChild
       size={size}
       icon={<AwsSmileIcon className="text-[#16191F]" />}
+      iconRight={<ExternalLink className="size-3 text-[#16191F]/70" strokeWidth={1.5} />}
       className={cn(
-        // Callsite override: AWS Marketplace orange CTA (not a semantic Studio token).
-        'border-transparent bg-[#FF9900] text-[#16191F] hover:bg-[#EC7211] hover:text-[#16191F]',
+        // Callsite override: AWS orange, soft hover (not a semantic Studio token).
+        'border-transparent bg-[#FF9F1A] text-[#16191F] hover:bg-[#F59610] hover:text-[#16191F]',
         className
       )}
       data-awsmp-bwa-cta="BuyWithAws"
